@@ -17,10 +17,10 @@ async function findAllPaletas() {
               <button class="Acoes__editar btn" onclick="abrirModal(${paleta.id})">Editar</button>
               <button class="Acoes__apagar btn" onclick="abrirModalDelete(${paleta.id})">Apagar</button>
             </div>
-        </div>
+          </div>
           <img class="PaletaListaItem__foto" src=${paleta.foto} alt="Paleta de ${paleta.sabor}" />
           
-    </div>`
+        </div>`
     );
   });
 }
