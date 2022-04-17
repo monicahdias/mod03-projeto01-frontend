@@ -68,7 +68,6 @@ async function abrirModal(id = null) {
       "Cadastrar uma paleta";
     document.querySelector("#button-form-modal").innerText = "Cadastrar";
   }
-
   document.querySelector("#overlay").style.display = "flex";
 }
 
@@ -123,9 +122,9 @@ async function createPaleta() {
   </div>`;
 
   if (modoEdicaoAtivado) {
-    document.getElementById(`PaletaListaItem_${id}`).outerHTML = html;
+    document.querySelector(`#PaletaListaItem_${id}`).outerHTML = html;
   } else {
-    document.getElementById("paletaList").insertAdjacentHTML("beforeend", html);
+    document.querySelector("#paletaList").insertAdjacentHTML("beforeend", html);
   }
 
   fecharModal();
@@ -140,7 +139,7 @@ function abrirModalDelete(id) {
 }
 
 function fecharModalDelete() {
-  document.querySelector("overlay-delete").style.display = "none";
+  document.querySelector("#overlay-delete").style.display = "none";
 }
 
 async function deletePaleta(id) {
@@ -155,7 +154,7 @@ async function deletePaleta(id) {
   const result = await response.json();
   alert(result.message);
 
-  document.getElementById(`PaletaListaItem`).innerHTML = "";
+  document.getElementById("paletaList").innerHTML = "";
 
   fecharModalDelete();
   findAllPaletas();
