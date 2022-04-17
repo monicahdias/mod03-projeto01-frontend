@@ -73,7 +73,7 @@ html {
   border-radius: 10px;
   padding: 10px;
   max-width: 315px;
-  max-height: 150px;
+  max-height: 200px;
   display: flex;
   justify-content: space-around;
 }
@@ -350,7 +350,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  width: 30%;
+  width: 40%;
   transition: all 0.3s ease-in-out;
 }
 
