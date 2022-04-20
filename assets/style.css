@@ -33,7 +33,7 @@ html {
   display: flex;
   justify-content: center;
   color: black;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .Home__container {
@@ -158,6 +158,7 @@ html {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .Header {
@@ -332,6 +333,7 @@ html {
 .button-modal-create{
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .Acoes{
